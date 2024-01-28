@@ -1,0 +1,11 @@
+body {
+    background-color: lightseagreen;
+}
+
+#camera, #results{
+    border: 2px dashed;
+    border-color: black; 
+    height: 250px; 
+    width: 300px;
+    border-radius: 20px;
+}

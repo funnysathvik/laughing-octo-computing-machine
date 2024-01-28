@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hand Signals</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <center>
+        <h1 class="btn btn-warning heading">Hand Signals
+            <br>
+            <span><img src="islas.webp" height="100px"></span>
+            <span><img src="penguin.gif" height="100px"></span>
+        </h1>
+        <br>
+    </center>
+    <br>
+    <div class="col-md-4 col-xs-12 col-sm-12" style="border-radius: 10px; background-color: peru; height: 250px;">
+        <center>
+            <br>
+            <img src="7c5a6y.gif" style="height: 200px; border-radius: 10px;">
+        </center>
+    </div>
+    <center>
+        <div class="col-md-4 col-xs-12 col-sm-12" style="background-color: goldenrod; border-radius: 10px; height: 250px;">
+            <h2>The Model Recognizes the Following Items</h2>
+            <ul>
+                <li>Thumbs up</li><!--thuup-->
+                <li>Thumbs down</li><!--thudown-->
+                <li>Spiderman symbol</li><!--spiderman-->
+                <li>Bathroom symbol</li><!--bathroom-->
+                <li>Water symbol</li><!--water-->
+                <li>Pencil symbol</li><!--pencil-->
+                <li>Okay symbol</li><!--okay-->
+            </ul>
+        </div>
+    </center>
+    <div class="col-md-4 col-xs-12 col-sm-12" style="border-radius: 10px; background-color: peru; height: 250px;">
+        <br><br>
+    <img src="penguin.gif">
+    <br><br>
+    </div>
+    <br><br><br>
+    <center>
+        <br>
+        <br>
+        <br>
+        <div class="col-md-4 col-sm-12 col-xs-12" style="background-color: goldenrod; border-radius: 20px;">
+            <br>
+            <div id="camera"></div>
+            <br>
+            <button class="btn btn-info" style="background-color: goldenrod;" onclick="take()">Take Image</button>
+        </div>
+        <div class="col-md-4 col-sm-12 col-xs-12" style="background-color: peru; border-radius: 20px; height: 325px;">
+            <br>
+            <br>
+            <h2>Prediction</h2>
+            <h3 id="pre1"></h3>
+        </div>
+        <div class="col-md-4 col-sm-12 col-xs-12" style="background-color: goldenrod; border-radius: 20px; height: 325px;">
+            <br>
+            <div id="results"></div>
+            <br>
+            <button class="btn btn-info" style="background-color: goldenrod;" onclick="classify()">Classify Image</button>
+        </div>
+    </center>
+  </body>
+</html>
